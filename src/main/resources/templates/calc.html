@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--/*@thymesVar id="calcName" type="java.lang.String"*/-->
     <title th:text="${calcName}"></title>
 </head>
 <body>
 <h3>Deine heutige Aufgabe:</h3>
-<span th:text="${calc}"></span> = ?
+<!--/*@thymesVar id="value1" type="java.lang.Integer"*/-->
+<!--/*@thymesVar id="symbol" type="java.lang.String"*/-->
+<!--/*@thymesVar id="value2" type="java.lang.Integer"*/-->
+<span th:text="${value1} + ' ' + ${symbol} + ' ' + ${value2}"></span> = ?
 </body>
 </html>
